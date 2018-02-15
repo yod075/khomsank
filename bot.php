@@ -1,5 +1,5 @@
 <?php
-//khomsan k.
+//created by Pol.Cpl khomsan khemthong
 $access_token ='';
 
 
@@ -14,20 +14,20 @@ if (!is_null($events['events'])) {
 		// Reply only when message sent is in 'text' format
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			//source
-     $userId = $event['source']['userId'];
+     			$userId = $event['source']['userId'];
 
 			// Get replyToken
 			$replyToken = $event['replyToken'];
-	   	$receivetext = $event['message']['text'];
+	   		$receivetext = $event['message']['text'];
 
-      $processtext = '++KK BOT'."\n";
+      			$processtext = 'Sanny Bot'."\n";
 			$processtext .= $receivetext;
 
-				// Build message to reply back
-	      		$messages = [
-	        	'type' => 'text',
-	        	'text' => $processtext
-	      		];
+		 	 // Build message to reply back
+	    		$messages = [
+	   		'type' => 'text',
+	    		'text' => $processtext
+	     		];
 
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [

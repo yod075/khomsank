@@ -1,6 +1,6 @@
 <?php
 //created by Pol.Cpl khomsan khemthong
-$access_token ='';
+$access_token ='Tf/xkSkG0BcK45GFWLKUsNr5RO1TAraZ73gMcd7/LhJw8E6iaLQ9JVISdVBWSwwWG7cxHkbPodyJWq8sBFWoIq/Nc90WObguZudcShRcJMMU18ay7wCxhZaXJpZ4s47l3PgrD6qjPM89X+ubz1XspQdB04t89/1O/w1cDnyilFU=';
 
 
 // Get POST body content
@@ -20,7 +20,7 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 	   		$receivetext = $event['message']['text'];
 
-      			$processtext = 'Sanny Bot'."\n";
+      			$processtext = 'TEST Bot'."\n";
 			$processtext .= $receivetext;
 
 		 	 // Build message to reply back
